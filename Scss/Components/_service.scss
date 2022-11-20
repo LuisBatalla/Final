@@ -1,0 +1,74 @@
+.service {
+    height:560px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;   
+
+    
+    @media only screen and (min-width: $mediaDesktop-1500) {
+        height: 720px;
+    }
+}
+
+.service.service--design {
+    background-image: url('../../images/desktop/imagen-ellos.jpeg');
+    color: $dark-desaturated-cyan;
+}
+
+.service.service--photography {
+    background-image: url('../../images/desktop/imagen-ellas.jpeg');
+    color:$dark-blue;
+}
+
+.service__text-box {
+    position:absolute;
+    bottom:0;
+    left:calc(50% - 200px);
+    padding:60px 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.service__text-box p {
+    font-size:0.9rem;
+    line-height:1.6rem;
+    margin-top:30px;
+}
+
+
+@media only screen and (min-width: $mediaTablet-420) {
+
+    .service.service--design {
+        background-image: url('../../images/desktop/imagen-ellos.jpeg');
+    }
+    
+    .service.service--photography {
+        background-image: url('../../images/desktop/imagen-ellas.jpeg');
+    }
+
+}
+
+@media only screen and (min-width: $mediaDesktop-820) {
+
+    .services-container {
+        display: flex;
+    }
+
+    .service {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .service__text-box {
+        max-width: 350px;
+        left: calc(50% - 175px);
+    }
+
+    .service__text-box p {
+        font-size:0.8rem;
+        line-height:1.4rem;
+    }
+} 

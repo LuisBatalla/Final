@@ -228,7 +228,7 @@ h5 {
   }
   .header-container .nav-container .mobile-menu .mobile-menu__container .mobile-links-container li .contact-style:hover {
     color: #ffffff;
-    background-color: hsla(168deg, 70%, 77%, 0.555); /*TODO ARREGLAR ESTO*/
+    background-color: hsla(168deg, 70%, 77%, 0.555); 
   }
 }
 @keyframes fade {
@@ -456,10 +456,10 @@ h5 {
 
 @media only screen and (min-width: 420px) {
   .service.service--design {
-    background-image: url("../../images/desktop/imagen-ellos.jpeg");
+    background-image: url("../Images/Movil/imagen-ellos.jpeg");
   }
   .service.service--photography {
-    background-image: url("../../images/desktop/imagen-ellas.jpeg");
+    background-image: url("../Images/Movil/imagen-ellas.jpeg");
   }
 }
 @media only screen and (min-width: 820px) {
@@ -568,19 +568,19 @@ h5 {
 }
 
 .galery-grid__item:nth-child(1) {
-  background-image: url("../../images/desktop/imagen-verano1.jpeg");
+  background-image: url("../Images/Movil/imagen-verano1.jpeg");
 }
 
 .galery-grid__item:nth-child(2) {
-  background-image: url("../../images/desktop/imagen-verano2.jpeg");
+  background-image: url("../Images/Movil/imagen-verano2.jpeg");
 }
 
 .galery-grid__item:nth-child(3) {
-  background-image: url("../../images/desktop/imagen-verano3.jpeg");
+  background-image: url("../Images/Movil/imagen-verano3.jpeg");
 }
 
 .galery-grid__item:nth-child(4) {
-  background-image: url("../../images/desktop/imagen-verano4.jpeg");
+  background-image: url("../Images/Movil/imagen-verano4.jpeg");
 }
 
 @media only screen and (min-width: 820px) {
@@ -606,6 +606,75 @@ h5 {
     max-width: 400px;
     margin: 40px auto;
   }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+form{
+  font-family: 'Inter Tight';
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 1.8rem 0 1.8rem 1.8rem;
+  margin: 1rem auto;
+  max-width: 50%;
+  border: 1px solid black;
+}
+fieldset{
+  border: none;
+}
+fieldset div:last-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+legend{
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: 'Inter Tight';
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+}
+label{
+  color: black;
+  text-transform: uppercase;
+}
+input{
+  height: 30px;
+  margin: 0 0 10px 10px;
+  border: 1px solid black;
+  padding: 15px;
+  font-family: 'Inter Tight';
+  font-size: 14px;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline: none;
+  border: 1px solid rgb(255, 43, 230);
+}
+.btn-send{
+  padding: 0 50px;
+  border: black 2px solid;
+  color: white;
+  font-family: 'Inter Tight';
+  text-transform: uppercase;
+  background-color: black;
+}
+.btn-send:hover{
+  background-color: white;
+  color: black;
+}
+svg{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+textarea {
+  resize: none;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=Style.css.map */

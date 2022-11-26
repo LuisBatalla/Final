@@ -49,4 +49,20 @@ const defaultPage = (e) => {
 iconMenu.addEventListener('click', displayIconMenu);
 
 window.addEventListener("resize", defaultPage);
+
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses();
+    panel.classList.add("active");
+  });
+});
+
+const removeActiveClasses = () => {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+};  
+
 /*Fuente: https://www.kodetop.com/efecto-smooth-scroll-con-css-o-javascript/  */
